@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto Colapso Social</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="introOverlay">
+    <h1>Colapso Social</h1>
+    <p>Bem-vindo ao "Colapso Social", uma experiência imersiva onde você enfrentará as tensões e desafios de um mundo em colapso. Em um cenário fictício, inspirado por questões contemporâneas como escassez de recursos naturais, desconfiança entre as pessoas, mudanças climáticas e conflitos geopolíticos, você terá a oportunidade de tomar decisões que afetarão diretamente o curso da narrativa e sua própria sobrevivência.</p>
+      <p>Você será colocado em situações de extremo dilema, onde a linha entre a colaboração e a traição será testada. Suas escolhas podem significar a salvação ou a destruição. Está pronto para enfrentar esse cenário e moldar o futuro?</p>
+
+    <button onclick="startExperience()">Iniciar</button>    
+  </div>
+
+  <video id="videoPlayer" autoplay style="display: none;">
+    <source src="" type="video/mp4">
+    Seu navegador não suporta vídeos HTML5.
+  </video>
+
+  <div id="choiceOverlay" style="display: none;"></div>
+
+  <script>
+    // Estrutura das cenas e decisões
+    const scenes = {
+      introducao: {
+        video: "assets/video/introducao.mp4",
+        choices: [
+          { text: "Ficar em casa estudando", nextScene: "decisao" },
+        ]
+      },
+      decisao: {
+        video: "assets/video/decisao.mp4",
+        choices: [
+          { text: "Tecnologia", nextScene: "tecnologia" },
+          { text: "Exôdo", nextScene: "exodo" }
+        ]
+      },
+      tecnologia: {
+        video: "assets/video/tecnologiaFinal.mp4",
+        choices: []
+      },
+      exodo: {
+        video: "assets/video/intro.mp4",
+        choices: [
+          { text: "Recursos Adiquiridos", nextScene: "exodoFinalBom" },
+          { text: "Recursos Exauridos", nextScene: "exodoFinalRuim" }
+        ]
+      },
+      exodoFinalBom: {
+        video: "assets/video/finalbom.mp4",
+        choices: [] 
+      },
+      exodoFinalRuim: {
+        video: "assets/video/cripto.mp4",
+        choices: []
+      }
+    };
+
+    let currentScene = "introducao"; 
+
+    const introOverlay = document.getElementById("introOverlay");
+    const videoPlayer = document.getElementById("videoPlayer");
+    const choiceOverlay = document.getElementById("choiceOverlay");
+    const decisionSound = new Audio('assets/audio/decision-sound.mp3'); 
+
+    // Inicia a experiência
+    function startExperience() {
+      introOverlay.style.display = "none";
+      videoPlayer.style.display = "block";
+      loadScene(currentScene);
+    }
+
+    // Congela a tela
+    function freezeFrame() {
+      videoPlayer.pause();
+      videoPlayer.currentTime = videoPlayer.duration - 1.1;
+    }
+
+    // Carrega a cena atual
+    function loadScene(sceneName) {
+      const scene = scenes[sceneName];
+      videoPlayer.src = scene.video;
+      videoPlayer.play();
+      
+      videoPlayer.addEventListener('ended', () => {
+        freezeFrame();
+      });
+
+      // Esconde as escolhas durante o vídeo
+      choiceOverlay.style.display = "none";
+
+      // Exibe as escolhas após o vídeo terminar
+      videoPlayer.onended = () => {
+        if (scene.choices.length > 0) {
+          // Toca o som de decisão somente quando os botões aparecerem
+          decisionSound.play();
+          // Limpa escolhas antigas
+          setTimeout(() => {
+            choiceOverlay.innerHTML = ""; 
+            scene.choices.forEach(choice => {
+              const button = document.createElement("div");
+              button.className = "choice";
+              button.innerHTML = `<p>${choice.text}</p>`;
+              button.onclick = () => {
+                // Pausa o som de decisão após escolher
+                decisionSound.pause();
+                decisionSound.currentTime = 0;
+                loadScene(choice.nextScene);
+              };
+              choiceOverlay.appendChild(button);
+            });
+            choiceOverlay.style.display = "flex"; // Exibe as escolhas após o vídeo
+          }, 500); 
+        } else {
+          choiceOverlay.style.display = "none"; 
+          showFinalScreen(); s
+        }
+      };
+    }
+
+    // Tela de Encerramento
+    function showFinalScreen() {
+      videoPlayer.style.display = "none";  
+      const finalMessage = document.createElement('div');
+      finalMessage.innerHTML = "<h2>Fim da jornada de Eduardo!</h2><p>Obrigado por participar da aventura. Até a próxima!</p>";
+      finalMessage.className = 'finalMessage';
+      document.body.appendChild(finalMessage);
+
+      const restartButton = document.createElement('button');
+      restartButton.innerText = "Reiniciar história";
+      restartButton.onclick = () => location.reload(); 
+      finalMessage.appendChild(restartButton);
+    }
+  </script>
+</body>
+</html>
