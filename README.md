@@ -36,11 +36,10 @@ Dividido em duas etapas principais:
 
 ### Links Relacionados:
 - [Roteiro Introdução](https://docs.google.com/document/d/1up4aGrM2p75v6khu_moENGEZIqhCGEqo5bJn_sdiQ7Q/edit?tab=t.0)
-- [Video Introdução](#)
-- [Formulário de Pesquisa Inicial](#)
-- [Dados](#)
-- [Design da Divulgação](#)
-- [Video Introdutório Genesis Azul](#)
+- [Video Introdução](https://drive.google.com/file/d/1rBibXhyXenlM-nx0aMoKcMw0E5zmdvjg/view)
+- [Formulário de Pesquisa Inicial](https://docs.google.com/forms/d/e/1FAIpQLSc09WBKoqzUT0jyqDQekPdRdDaS0aTOAmAVgd2MmHKiPthtXA/viewform)
+- [Dados](https://docs.google.com/spreadsheets/d/1GqCcQoL4OLyAMJ7ltUGaPWDKBr94jlsxmd2KN95ladY/edit?gid=251780718#gid=251780718)
+- [Design da Divulgação](https://www.canva.com/design/DAGeGUirYKs/WFUQB9uVrrjcG9yq5ai_qg/edit)
 
 #### Autoria:
 - **Roteiro Introdução**: Alex Felipe Lanção
@@ -84,12 +83,12 @@ Dividido em duas etapas principais:
 - **Kuula**: Para testar as imagens e posicionar elementos VR.
 
 ### Links Relacionados:
-- [Manual do Jogo](#)
-- [Fotos dos Ambientes VR](#)
-- [Site do Pin](#)
-- [Roteiro Manual do Video](#)
+- [Manual do Jogo](https://www.canva.com/design/DAGfTESBCmw/gR566x96yYzHmr_imI8ANw/edit)
+- [Fotos dos Ambientes VR](https://www.google.com/url?q=https://imgur.com/a/wl31vaC&sa=D&source=docs&ust=1739968512341758&usg=AOvVaw385fNZzgh3kOUmdEnMkJMu)
+- [Site do Pin](https://colapso-social-tec.vercel.app/)
+- [Roteiro Manual do Video](https://docs.google.com/document/d/1Q52UAVT5xRV3mKoLE39cAEgqBq4_xukO_5qIc5wSdl0/edit?tab=t.0)
 - [Roteiro Do Final do Jogo](#)
-- [Video Final Do Jogo](#)
+- [Video Final Do Jogo](https://drive.google.com/drive/folders/13UsHNW-qm7fFknbpVQzJxTmL5ISBhiAl)
 
 #### Autoria:
 - **Imagens VR**: Pedro Azara Xavier.
@@ -110,17 +109,17 @@ Dividido em duas etapas principais:
 - Movimentação baseada em cartas, alianças estratégicas e finais variáveis.
 
 ### Links Relacionados:
-- [Tabuleiro Digital](#)
-- [Sonoplastia](#)
-- [Design das Cartas](#)
-- [Regras do Jogo Êxodo](#)
-- [Roteiro Do Final do Jogo](#)
-- [Regras do Jogo](#)
-- [Site da Introdução e Finais de Decisão](#)
-- [Vídeo Introdução](#)
-- [Vídeo Final Bom Êxodo](#)
-- [Vídeo Final Ruim Êxodo](#)
-- [Jogo Digital](#)
+- [Tabuleiro Digital](https://drive.google.com/file/d/1PAFdgH67XlcmEHShqdx7uZBxdz5Jho2d/view)
+- [Sonoplastia](https://drive.google.com/drive/folders/1awmN9Lhi9LlhuiK6bvw5QTa4EoEyalC-)
+- [Design das Cartas](https://www.canva.com/design/DAGe7Nft_UE/Yp9UuaQFZ4TMgcCJuwMFJQ/edit)
+- [Regras do Jogo Êxodo](https://docs.google.com/document/d/1lKb1VFffIkDO4BOpzAvCekKgg5z_nBfvF7GDDTYUJUQ/edit?tab=t.0#heading=h.gjdgxs)
+- [Roteiro Do Final do Jogo](https://docs.google.com/document/d/16LA1FyH6xmmmTw0EnsyUL-uNnfaJNhGjJh7EjYnfqHQ/edit?tab=t.0)
+- [Regras do Jogo](https://www.youtube.com/watch?v=FIVkliXTfDU)
+- [Site da Introdução e Finais de Decisão](https://lukasrozado.github.io/colapsoSocial/)
+- [Vídeo Introdução do Final](https://www.youtube.com/watch?v=XXzGS8VK9o0)
+- [Vídeo Final Bom Êxodo](https://www.youtube.com/watch?v=sPZUOjCm2D4)
+- [Vídeo Final Ruim Êxodo](https://www.youtube.com/watch?v=TT2758mQVh4)
+- [Jogo Digital](https://drive.google.com/drive/folders/1awmN9Lhi9LlhuiK6bvw5QTa4EoEyalC-)
 
 #### Autoria:
 - **Design do Tabuleiro**: Roberto Lourenço.
@@ -171,6 +170,9 @@ Dividido em duas etapas principais:
 | 16:30   | Encerramento e coleta de feedback. |
 
 ---
+
+### Links Relacionados:
+- [Vídeos das Apresentações do Dia](https://drive.google.com/drive/folders/1xOYmLMFg8d-_sH-tzKW1eLFt905XaYNE?usp=drive_link)
 
 ## 5. Colaboradores
 
